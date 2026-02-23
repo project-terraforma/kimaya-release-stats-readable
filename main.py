@@ -7,12 +7,25 @@
 
 import os
 from parseFile import parseFile
+#from pinecone import Pinecone
+import config
+from metrics_cleaner import clean_metrics
+
+# Use API key from config.py (set PINECONE_API in that file)
+# Pinecone related calls commented out for local testing of cleaner
+# pc = Pinecone(api_key=config.PINECONE_API)
+# index = pc.Index("quickstart")
 
 DATA_DIR = "my_data"
 OUT_FILE = "out.txt"
 
 
 def main():
+    # Clean metrics CSVs before any other processing
+    try:
+        clean_metrics()
+    except Exception:
+        pass
     # Delete out.txt if it exists
     if os.path.exists(OUT_FILE):
         os.remove(OUT_FILE)
