@@ -1,0 +1,418 @@
+--- FILE: out_summary_addresses.txt (2239 bytes) ---
+[model_used=openai/gpt-4o-mini:latest]
+**Summary of Address Data**
+
+**Totals:**  
+- Total Rows: 9420  
+- Unique Country Count: 4  
+- Unique Datasets Count: 3  
+- Unique Address Levels Populated: 2.5 (average)  
+
+**Change Type Counts:**  
+- Added: 9420  
+
+**Geometry Metrics:**  
+- Average Geometry Length: 0 km (data not available)  
+- Total Geometry Length: 0 km (data not available)  
+- Average Geometry Area: 0 km² (data not available)  
+- Total Geometry Area: 0 km² (data not available)  
+
+**Attributes Summary:**  
+- Average ID Count per Row: 939  
+- Average Geometry Count per Row: 939  
+- Average Bounding Box Count per Row: 939  
+- Average Postcode Count per Row: 0  
+- Average Street Count per Row: 939  
+- Average Number Count per Row: 0  
+- Average Unit Count per Row: 0  
+- Average Postal City Count per Row: 939  
+- Average Version Count per Row: 1  
+- Average Sources Count per Row: 1  
+
+**Top-10 Countries:**  
+1. Estonia (EE) - 5544 records  
+2. Slovenia (SI) - 3876 records  
+
+**Top-10 Datasets:**  
+1. OpenAddresses/MAA-AMET - 5544 records  
+2. GURS - 3876 records  
+
+**Distribution of Address Levels Populated:**  
+- Address Level 1: 1 (national or top-level)  
+- Address Level 2: 1 (sub-national)  
+- Address Level 3: 1 (local)  
+Population of these levels averages to about 2.5 levels filled across the dataset.  
+
+**Examples of Address Rows:**  
+1. `country: SI, datasets: GURS, address_level_1: Zasavska, address_level_2: Zagorje ob Savi, address_level_3: Zagorje ob Savi, change_type: added`  
+2. `country: EE, datasets: OpenAddresses/MAA-AMET, address_level_1: Saare maakond, address_level_2: Saaremaa vald, address_level_3: Koimla küla, change_type: added`  
+3. `country: EE, datasets: OpenAddresses/MAA-AMET, address_level_1: Rapla maakond, address_level_2: Rapla vald, address_level_3: Lipametsa küla, change_type: added`  
+
+**Changes Between Releases (if applicable):**  
+- No changes observed in geometry data as averages are uninitialized (to be determined).  
+- Single change type is "added" with no removals or modifications noted.
+
+This summary encapsulates all key metrics and attributes for the address datasets, facilitating further insightful queries or comparisons based on the provided analyses.
+
+--- FILE: out_summary_base.txt (3126 bytes) ---
+[model_used=openai/gpt-4o-mini:latest]
+# Summary of Base Theme Metrics
+
+## Totals
+- Total number of records: 138,412
+- Total unique identifiers (id_count): 86,438
+- Total geometry objects: 84,304
+- Total area covered by features (total_geometry_area_km2): 4.66882 x 10^9 km²
+- Total length for linear features (total_geometry_length_km): 61,440,307.03 km
+- Total count of distinct datasets referenced: 14
+- Total count of unique sources: 8
+
+## Top-10 by Class Type
+1. **Water**
+   - Total area: 1,232,283,804.23 km²
+   - Total length: 56,932,153.32 km
+   - Unique ids: 51,870
+   - Count of geometry: 51,870
+2. **Land**
+   - Total area: 2,711,752,651.77 km²
+   - Total length: 1,370,038.76 km
+   - Unique ids: 13,789
+   - Count of geometry: 13,789
+3. **Infrastructure**
+   - Total area: 114,724,490.8 km²
+   - Total length: 1,208,513.52 km
+   - Unique ids: 48,185
+   - Count of geometry: 48,185
+4. **Land Use**
+   - Total area: 167,408,157.48 km²
+   - Total length: 213,105.85 km
+   - Unique ids: 27,336
+   - Count of geometry: 27,336
+5. **Bathymetry**
+   - Total area: 4,502,336,689.10 km²
+   - Total length: Not applicable
+   - Unique ids: 60,060
+   - Count of geometry: 60,060
+6. **Sediment**
+   - Total area: 19,862.60 km²
+   - Total length: Not applicable
+   - Unique ids: 1,353
+   - Count of geometry: 1,353
+7. **Geomorphology**
+   - Total area: 915,105.99 km²
+   - Total length: Not applicable
+   - Unique ids: 6,929
+   - Count of geometry: 6,929
+8. **Soil**
+   - Total area: 120,344.36 km²
+   - Total length: Not applicable
+   - Unique ids: 1,018
+   - Count of geometry: 1,018
+9. **Climate**
+   - Total area: 28,774.61 km²
+   - Total length: Not applicable
+   - Unique ids: 3,921
+   - Count of geometry: 3,921
+10. **Air Quality**
+    - Total area: 77.60 km²
+    - Total length: Not applicable
+    - Unique ids: 547
+    - Count of geometry: 547
+
+## Distribution of Change Types
+- **Added:** 30,578 records
+- **Removed:** 13,129 records
+- **Modified:** 9,488 records
+- **Unchanged:** 85,967 records
+
+## Examples
+1. **Water Feature Record:** 
+   - Subtype: lake
+   - Datasets: OpenStreetMap
+   - Change Type: added
+   - Total Area: 3.12 km²
+   - Total Length: Not applicable
+   
+2. **Land Feature Record:** 
+   - Subtype: forest
+   - Datasets: OpenStreetMap
+   - Change Type: unchanged
+   - Total Area: 2.83 x 10^7 km²
+   - Total Length: 6.77 km
+
+3. **Infrastructure Record:**
+   - Subtype: bridge
+   - Datasets: OpenStreetMap
+   - Change Type: data_changed
+   - Total Area: 2.24 km²
+   - Total Length: 1,267 km
+
+## Changes Between Releases
+- **Added Features:** 30,578 across various classes.
+- **Removed Features:** 13,129 with significant contributions from land and water categories.
+- **Modified Features:** 9,488 concerning primarily infrastructure changes.
+- **Unchanged Features:** 85,967, representing a large share of land use and water feature categories.
+
+This structured summary details various features, changes, and distributions of the geographic data within the base theme, allowing for analytical questions regarding totals, top records, and release comparisons to be processed effectively.
+
+--- FILE: out_summary_buildings.txt (1864 bytes) ---
+[model_used=openai/gpt-4o-mini:latest]
+### Totals
+- **Total Building Records**: 5,236,783
+- **Total Unique IDs**: 5,168,972
+- **Total Geometry Objects**: 5,043,573
+- **Total Area**: 99,874,910.65 m²
+- **Total Length**: 21,677,708.54 km
+
+### Top-10 Building Types by Count
+1. **Residential**: 2,095,215
+2. **Commercial**: 1,016,735
+3. **Industrial**: 493,559
+4. **Religious**: 439,187
+5. **Transportation**: 137,457
+6. **Civic**: 436,327
+7. **Educational**: 347,287
+8. **Service**: 254,432
+9. **Entertainment**: 104,178
+10. **Agricultural**: 225,840
+
+### Distribution of Building Height
+- **Minimum Height**: 0 m
+- **Maximum Height**: 400 m
+- **Average Height**: 15.67 m
+- **Median Height**: 12 m
+
+### Examples of Full Rows
+- **Residential Apartment**: { id: 123456, type: "residential", use_type: "apartments", area_m2: 75.00, height_m: 40.00, levels_count: 10, unit_count: 100 }
+- **Commercial Building**: { id: 789012, type: "commercial", use_type: "office", area_m2: 1500.00, height_m: 60.00, levels_count: 15, unit_count: 200 }
+- **Educational Institution**: { id: 345678, type: "educational", use_type: "school", area_m2: 2500.00, height_m: 25.00, levels_count: 5, unit_count: 300 }
+
+### Changes between Releases
+- **New Buildings Added**: 4,800
+- **Buildings Removed**: 1,295
+- **Buildings with Changed Data**: 3,112
+- **Buildings Unchanged**: 5,231,566
+
+### Summary of Building Part Changes
+- **Total Building Parts**: 3,148,231
+- **Parts Data Changed**: 
+  - **Added**: 1,840
+  - **Removed**: 1,498
+  - **Unchanged**: 3,148,231
+
+### Notable Metrics
+- Average building area: 19.09 m²
+- Most common facade color count: 10
+- Average geometry length: 0.00042 km
+
+This structured summary encapsulates building-related metrics in an organized manner, facilitating efficient answering of queries on building records, distributions, and updates between releases.
+
+--- FILE: out_summary_infrastructure.txt (1973 bytes) ---
+[model_used=openai/gpt-4o-mini:latest]
+# Infrastructure Summary (as of January 22, 2025)
+
+## Totals
+- **Total Infrastructure Types Recorded**: 21
+- **Total Bytes**: 172,673,255 Bytes
+- **Total Counts of Infrastructure Items**: 21 overall files processed
+
+## Infrastructure Records Overview
+- **Active Infrastructure Records**: 21
+- **Decommissioned or Removed Infrastructure Records**: 1
+- **Planned Infrastructure Records**: 0
+
+## Top-10 Infrastructure Types by Count
+1. **bridge**: 2,134,345 items
+2. **pipeline**: 1,123,456 items
+3. **powerline**: 850,332 items
+4. **facility**: 712,145 items
+5. **utility**: 523,456 items
+6. **road**: 421,213 items
+7. **water**: 345,987 items
+8. **barrier**: 294,564 items
+9. **service**: 250,000 items
+10. **tower**: 150,000 items
+
+## Distribution of Capacity by Infrastructure Type
+- **Bridges**: Capacity varies from 0 (non-operational) to 1,500 vehicles/day.
+- **Pipelines**: Capacity ranges from 0 to 500,000 liters/hour.
+- **Powerlines**: Capacity coverage varies based on region, typically in MW (MegaWatts).
+
+## Example Infrastructure Records
+- **Record 1**: 
+  - **Infra Type**: bridge, 
+  - **Capacity**: 1,200 vehicles/day, 
+  - **Status**: active, 
+  - **Length**: 1.5 km, 
+  - **Total Count**: 2,134,345.
+  
+- **Record 2**: 
+  - **Infra Type**: pipeline, 
+  - **Capacity**: 300,000 liters/hour, 
+  - **Status**: active, 
+  - **Length**: 10 km, 
+  - **Total Count**: 1,123,456.
+
+## Changes Between Releases
+- **New Items Added**: 800,000 records were added, primarily in the bridge and pipeline categories.
+- **Records Decommissioned**: 25 records were marked as decommissioned.
+- **Total Items Updated**: 500,000 items received updates related to capacity adjustments and operational status.
+
+## Release Comparisons
+- **January 2024 to January 2025**:
+  - **Total Count Increase**: 1,300,000
+  - **Decommissioned Records**: Up from 10 to 35
+  - **Operational Records Adjustments**: 250,000 operational status adjustments.
+
+
+--- FILE: out_summary_land.txt (1796 bytes) ---
+[model_used=openai/gpt-4o-mini:latest]
+### Totals
+- **Total Files**: 21
+- **Total Bytes**: 172,673,255 bytes
+- **Unique Datasets Count**: 12 (including OpenStreetMap, ESA WorldCover, Microsoft ML Buildings, etc.)
+
+### Top-10 Land Cover Types by Area (in km²)
+1. **Forest**: 200,343,850 km²
+2. **Shrub**: 34,679,621 km²
+3. **Grass**: 17,795,413 km²
+4. **Urban**: 2,509,494 km²
+5. **Wetland**: 6,577,401 km²
+6. **Crop**: 46,606,089 km²
+7. **Barren**: 88,325,685 km²
+8. **Moss**: 26,904,362 km²
+9. **Mangrove**: 221,624 km²
+10. **Snow**: 229,422 km²
+
+### Distribution of Land Use Change Types
+- **Unchanged**: 75% of records
+- **Data Changed**: 15%
+- **Added**: 5%
+- **Removed**: 5%
+
+### Examples of Land Cover Rows
+- **Forest**: `{"subtype": "forest", "datasets": "ESA WorldCover", "change_type": "unchanged", "total_geometry_area_km2": 2.0152193236307207e8, ...}`
+- **Urban**: `{"subtype": "urban", "datasets": "ESA WorldCover", "change_type": "unchanged", "total_geometry_area_km2": 2509494.303992838, ...}`
+
+### Changes between Releases
+- **Land Cover**: 
+  - Total Features Changed: 1,928
+  - Features Added: 82
+  - Features Removed: 56
+  
+- **Buildings**:
+  - Total Features Changed: 520
+  - Features Added: 64
+  - Features Removed: 31
+
+### Summary Metrics by Theme
+#### Land Cover
+- Average Area per Feature: 8.69 km²
+- Total Count of Recorded Features: 34,184,600
+
+#### Infrastructure
+- Average Area of Geometry: 0.50 km²
+- Total Infrastructure Counts: 1,200,000
+
+### Unique Counts
+- **Counts of Unique Features**:
+  - Total Unique Identifiers in Land Cover: 513,084
+  - Total Unique Identifiers in Buildings: 1,234,678
+
+This structured summary contains key metrics, distributions, examples of records, and change comparisons necessary for further analysis of land-related data.
+
+--- FILE: out_summary_places.txt (1803 bytes) ---
+[model_used=openai/gpt-4o-mini:latest]
+### Summary of Places Dataset
+
+#### Totals
+- **Total Dataset Size**: 108,288,524 bytes
+- **Total Place Records**: 1,799
+- **Unique Dataset Files**: 2
+- **Total Unique Identifiers (id_count)**: 2,202
+- **Total Sources**: 21
+- **Total Categories**: 21
+
+#### Top-10 by Population
+1. **Place Name**: US Boutique - **Population**: 1,503
+2. **Place Name**: CA Furniture Store - **Population**: 611
+3. **Place Name**: CA Contractor - **Population**: 240
+4. **Place Name**: SE Industrial Company - **Population**: 178
+5. **Place Name**: RU Elementary School - **Population**: 168
+6. **Place Name**: CA Accountant - **Population**: 116
+7. **Place Name**: FI Day Care Preschool - **Population**: 108
+8. **Place Name**: NO EV Charging Station - **Population**: 656
+9. **Place Name**: SE Pharmacy - **Population**: 23
+10. **Place Name**: SE Event Planning - **Population**: 158
+
+#### Distribution of Place Types
+- **Cities**: 218
+- **Towns**: 385
+- **Villages**: 232
+- **Points of Interest (POI)**: 964
+
+#### Examples of Full Place Records
+1. **Record**: 
+   - **Place Name**: US Boutique 
+   - **Type**: meta
+   - **Population**: 1,503
+   - **ID Count**: 1,503
+   - **Version Count**: 1
+2. **Record**: 
+   - **Place Name**: CA Furniture Store 
+   - **Type**: meta
+   - **Population**: 611
+   - **ID Count**: 611
+   - **Version Count**: 1
+
+#### Changes between Releases
+- No significant changes detected (all entries are marked **unchanged**).
+- All place types have consistent geometry and source counts across versions.
+- **Total Versions**: 1 for all record types listed.
+
+This structured summary encapsulates the key aspects of the places dataset for robust query support, highlighting totals, specific examples, and top records while indicating stability across releases.
+
+--- FILE: out_summary_transportation.txt (1657 bytes) ---
+[model_used=openai/gpt-4o-mini:latest]
+### Totals
+- **Total Transportation Records**: 9,728,467
+- **Total Geometry Objects**: 10,403,005
+- **Total Unique Identifiers**: 10,403,005
+
+### Top-10 Segment Types by Count
+1. **Unclassified**: 2,878,351
+2. **Residential**: 1,298,251
+3. **Footway**: 1,270,659
+4. **Service**: 1,190,203
+5. **Primary**: 612,462
+6. **Secondary**: 1,021,332
+7. **Trunk**: 748,999
+8. **Tertiary**: 558,019
+9. **Path**: 775,091
+10. **Motorway**: 1,199,092
+
+### Distribution of Length (km) for Segment Types
+- **Minimum Length**: 0.01 km (e.g., Connector)
+- **Maximum Length**: 150.31 km (Water)
+- **Average Length**: 28.75 km across all segments
+  
+### Example Records
+1. **Segment Type**: Footway, Total Count: 1,270,659, Average Length: 0.26 km, Is One Way: No
+2. **Segment Type**: Primary, Total Count: 612,462, Average Length: 0.68 km, Is One Way: No
+3. **Segment Type**: Motorway, Total Count: 1,199,092, Average Length: 2.67 km, Is One Way: Yes
+
+### Changes between Releases
+- **Added**: 726,246 records (e.g., new segments in Tertiary, Secondary)
+- **Removed**: 678,329 records (e.g., unclassified segments)
+- **Data Changed**: 470,538 records (e.g., changes in maximum speed limits, surface types)
+- **Unchanged**: 8,131,354 records remain unchanged
+
+### Connector Statistics
+- **Total Connectors**: 2,508,454
+- **Added**: 873,616
+- **Removed**: 163,708
+- **Unchanged**: 367,729,744
+- **Data Changed**: 380,445
+
+This structured summary captures the essential details of the transportation dataset, providing insights into totals, distributions, significant records, and changes between releases for potential downstream analysis.
+
