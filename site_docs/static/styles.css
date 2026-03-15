@@ -1,0 +1,114 @@
+body {
+
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(135deg,#3f4da1,#4ec5c1);
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    width: 900px;
+}
+
+.card {
+
+    background: #f3f4f6;
+    border-radius: 18px;
+    padding: 40px;
+
+}
+
+h1 {
+    color: #374b9b;
+}
+
+.subtitle {
+
+    color: #444;
+    margin-bottom: 25px;
+
+}
+
+.buttons {
+
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+
+}
+
+.btn {
+
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+.teal {
+
+    background: #4ec5c1;
+    color: white;
+
+}
+
+.purple {
+
+    background: #4b4fa3;
+    color: white;
+
+}
+
+.preview {
+
+    border-radius: 12px;
+    border: 2px solid #8bd0da;
+    overflow: hidden;
+
+    max-height: 450px;
+
+}
+
+
+.preview-header {
+
+    background: #3d4aa1;
+    color: white;
+    padding: 12px;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.copy-btn {
+
+    background: #4ec5c1;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+
+pre {
+
+    padding: 20px;
+    background: #efefef;
+    margin: 0;
+
+    white-space: pre-wrap;
+
+    height: 400px;        /* fixed window size */
+    overflow-y: auto;     /* vertical scrollbar */
+    overflow-x: auto;     /* horizontal scrollbar if needed */
+
+}
