@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Release Stats Summary</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>📄 Release Stats made readable for you!</h1>
+
+        <p class="subtitle">
+        This text summary will allow you to ask any questions you want related to the data,
+        rather than having data statically displayed
+        </p>
+
+        <div class="buttons">
+
+            <button id="toggleBtn" onclick="toggleSummary()" class="btn teal">
+                Hide Text Summary
+            </button>
+
+
+            <a href="/download">
+                <button class="btn purple">
+                    ⬇ Download
+                </button>
+            </a>
+
+        </div>
+
+        <div class="preview">
+
+            <div class="preview-header">
+
+                <span>Content Preview</span>
+
+                <button class="copy-btn" onclick="copyText()">
+                    Copy
+                </button>
+
+            </div>
+
+            <pre id="summaryText">{{content}}</pre>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+function copyText() {
+
+    const text = document.getElementById("summaryText").innerText;
+
+    navigator.clipboard.writeText(text);
+
+}
+
+function toggleSummary() {
+
+    const el = document.getElementById("summaryText");
+    const btn = document.getElementById("toggleBtn");
+
+    if (el.style.display === "none") {
+
+        el.style.display = "block";
+        btn.innerText = "Hide Text Summary";
+
+    } else {
+
+        el.style.display = "none";
+        btn.innerText = "View Text Summary";
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
